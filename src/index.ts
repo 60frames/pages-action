@@ -39,7 +39,7 @@ try {
 	};
 
 	const createPagesDeployment = async () => {
-		console.error(`Creating Pages Deployment from 60frames`);
+		console.log(`Creating Pages Deployment from 60frames`);
 		// TODO: Replace this with an API call to wrangler so we can get back a full deployment response object
 		await shellac.in(path.join(process.cwd(), workingDirectory))`
     $ export CLOUDFLARE_API_TOKEN="${apiToken}"
